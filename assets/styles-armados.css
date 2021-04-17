@@ -1,0 +1,21 @@
+body{
+    background-image: url(../../img/fondo-espacio-forma-abstracta-estrellas_189033-30.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+ }
+.imagenlogo img{
+    width: 100%;
+}
+.imagenlogo{
+    padding: 1%;
+}
+
+.productos-pc {
+    display:flex;
+    justify-content: space-between;
+}
+
+.productos-pc2 {
+    display:flex;
+    justify-content: space-between;
+}
