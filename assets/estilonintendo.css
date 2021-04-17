@@ -1,20 +1,18 @@
 body{
-    background-image: url(../../img/fondops4.jpg);
+    background-image: url(../../img/fondonintendo.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
  }
-.imagenlogo img{
+ .imagenlogo img{
     width: 100%;
 }
 .imagenlogo{
     padding: 1%;
 }
-.productos-play {
+.productos-nintendo {
     background-color: rgb(56, 56, 61);
     padding: 40px;
     display: flex;
     justify-content: space-around;
 }
-.card img{
-    height: 49%;
-}
+ 
