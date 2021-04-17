@@ -11,9 +11,11 @@ body{
 }
 
 .productos-pc {
-    display: flex;
+    display:flex;
+    justify-content: space-between;
 }
 
 .productos-pc2 {
     display:flex;
+    justify-content: space-between;
 }
