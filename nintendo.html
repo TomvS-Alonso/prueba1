@@ -16,58 +16,85 @@
         <main class="container">
             
             <header>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-                  <a class="navbar-brand">AgoraTech</a>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2" id="navbar1">
+                <a class="navbar-brand">
+                  <img src="https://user-images.githubusercontent.com/590297/84582475-795ece00-adba-11ea-9aa1-a62c308746ec.png"
+                    width="30" height="30" class="d-inline-block align-top" alt="" id="icono-nav">
+                  <a class="navbar-brand" href="./index.html">AgoraTech</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
+                      <!--Primer Dropdown-->
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
                           Consolas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="playstation.html">PlayStation</a>
-                          <a class="dropdown-item" href="xbox.html">Xbox</a>
-                          <a class="dropdown-item" href="nintendo.html">Nintendo</a>
+                          <a class="dropdown-item" href="./playstation.html">PlayStation</a>
+                          <a class="dropdown-item" href="./xbox.html">Xbox</a>
+                          <a class="dropdown-item" href="./nintendo.html">Nintendo</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Sobre nosotros</a>
+                          <a class="dropdown-item" href="#">Ofertas</a>
                         </div>
                       </li>
+                      <!--Segundo Dropdown-->
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
                           PC
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="pc.html">PC Armados</a>
                           <a class="dropdown-item" href="componentes.html">Componentes</a>
+                          <a class="dropdown-item" href="pc.html">PC armados</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">About Us</a>
+                          <a class="dropdown-item" href="#">Ofertas</a>
                         </div>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          Extras
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Registro</a>
-                          <a class="dropdown-item" href="#">Contacto</a>
+                      <!--Dropdown Login-->
+                      <div class="dropdown ml-1 mt-1" id="dropdownlogin">
+                        <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenu2"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Iniciar sesión
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <form class="px-4 py-3">
+                            <div class="form-group">
+                              <label for="exampleDropdownFormEmail1">Correo electrónico:</label>
+                              <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                placeholder="email@ejemplo.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormPassword1">Contraseña:</label>
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                  Recordarme
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                          </form>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">About Us</a>
+                          <a class="dropdown-item" href="#">¿No tienes una cuenta?</a>
+                          <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
                         </div>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                      </div>
                   </div>
-                </nav>
+                  </ul>
+                  <form class="d-flex">
+                    <button class="btn btn-outline-success mr-2" type="submit">Buscar</button>
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+                  </div>
+              </nav>
               </header>
             
             
@@ -114,26 +141,26 @@
             
     
             <footer>
-                <nav class="navbar navbar-expand navbar-dark bg-dark mt-2">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
-                    aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link">&copy;KeyB <span class="sr-only"></span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id="cart" class="nav-link" target="_blank" href="https://www.razer.com/cart">Cart</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </footer>
+              <nav class="navbar navbar-expand navbar-dark bg-dark mt-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+                  aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link">&copy;AgoraTech <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="cart" class="nav-link" target="_blank" href="https://www.razer.com/cart">Cesta</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </footer>
     
     
         </main>

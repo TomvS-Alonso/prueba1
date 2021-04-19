@@ -20,3 +20,15 @@ body{
 .card img{
     height: 49%;
 }
+#icono-nav:hover{
+    animation: icon linear 0.5s;
+ }
+ 
+ @keyframes icon{
+    from{
+       transform: rotate(360deg);
+   }
+   to{
+       transform: rotate(0deg);
+   }
+ }
