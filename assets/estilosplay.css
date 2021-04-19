@@ -13,7 +13,9 @@ body{
     background-color: rgb(56, 56, 61);
     padding: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 .card img{
     height: 49%;

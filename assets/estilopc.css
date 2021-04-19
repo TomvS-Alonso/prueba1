@@ -12,10 +12,14 @@ body{
 
 .productos-pc {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .productos-pc2 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
