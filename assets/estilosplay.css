@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../img/fondo-espacio-forma-abstracta-estrellas_189033-30.png);
+    background-image: url(../../img/fondops4.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
  }
@@ -9,19 +9,18 @@ body{
 .imagenlogo{
     padding: 1%;
 }
-
-.productos-pc {
-    display:flex;
+.productos-play {
+    background-color: rgb(56, 56, 61);
+    padding: 40px;
+    display: flex;
+    
+    
     justify-content: space-evenly;
     overflow: hidden;
     flex-wrap: wrap;
 }
-
-.productos-pc2 {
-    display:flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    flex-wrap: wrap;
+.card img{
+    height: 49%;
 }
 
 #icono-nav:hover{
