@@ -1,9 +1,9 @@
 body{
-    background-image: url(../../img/fondoxbox.jpg);
+    background-image: url(../img/fondoxbox.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
  }
- .imagenlogo img{
+.imagenlogo img{
     width: 100%;
 }
 .imagenlogo{

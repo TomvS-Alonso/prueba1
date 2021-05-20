@@ -1,7 +1,16 @@
 (function () {
 
-    var id = 0;
+    var id = 1;
     const btnGuardar = document.getElementById("guardar");
+
+    document.addEventListener('readystatechange', function () {
+        if(document.readyState === 'interactive') {
+            // con esta funcion, funciona todo lo demas
+            pintarTablaInicio();
+            
+        }
+    });
+
 
     function cargarDatosLocalStorage(){
         let retorno = [];
@@ -23,7 +32,7 @@
         const precio = formulario.precio.value;
         
         const objetoProductoTemporal = {
-            id: id ++,
+            id: id,
             nombre: nombre,
             descripcion: descripcion,
             precio: precio
@@ -37,8 +46,8 @@
         
         //resetea el formulario
         alert('Usuario registrado con exito');
+           
         formulario.reset();
-        
     });
    
 
@@ -46,7 +55,7 @@
         datosProductos.push(producto);
         localStorage.setItem('productos',JSON.stringify(datosProductos));
         // se imprime el id incrementable
-        // id ++;
+        id ++;        
     }
 
     function anadirElementosTabla(hijoAnadir) {
@@ -135,11 +144,7 @@
             anadirElementosTabla(datosProductos[i]);
         }
     }
-    document.addEventListener('readystatechange', function () {
-        if(document.readyState === 'interactive') {
-            pintarTablaInicio();
-        }
-    });
+    
 
 
      function eliminarElemento(id) {
@@ -199,7 +204,10 @@
             }
         }
         
-    }    
+    }
+    
+    // CODIGO PARA ENRUTAMIENTO
+    
     
 
 })();
