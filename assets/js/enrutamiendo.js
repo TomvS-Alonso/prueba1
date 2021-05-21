@@ -21,6 +21,9 @@
         },
         '/Registro': {
             archivo: 'index-registro.html'
+        },
+        '/Productos': {
+            archivo: 'formProductos.html'
         }
     };
     const contenedor = d.getElementById("contenido-web")
