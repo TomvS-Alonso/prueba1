@@ -1,0 +1,32 @@
+body{
+    background-image: url(../../img/fondonintendo.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+ }
+ .imagenlogo img{
+    width: 100%;
+}
+.imagenlogo{
+    padding: 1%;
+}
+.productos-nintendo {
+    background-color: rgb(56, 56, 61);
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+#icono-nav:hover{
+    animation: icon linear 0.5s;
+ }
+ 
+ @keyframes icon{
+    from{
+       transform: rotate(360deg);
+   }
+   to{
+       transform: rotate(0deg);
+   }
+ }
+ 
