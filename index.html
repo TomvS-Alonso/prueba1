@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgoraTech</title>
-    <link rel="stylesheet" href="assets/estilos.css" />
+    <link rel="stylesheet" href="./assets/CSS/estilos.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/lightslider.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -22,117 +24,119 @@
     <main class="container">
       <!--header-->
       <header>
-        <!--Seccion Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2" id="navbar1">
-          <a class="navbar-brand">
-            <img src="https://user-images.githubusercontent.com/590297/84582475-795ece00-adba-11ea-9aa1-a62c308746ec.png"
-              width="30" height="30" class="d-inline-block align-top" alt="" id="icono-nav">
-            <a class="navbar-brand" href="./index.html">AgoraTech</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <!--Primer Dropdown-->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Consolas
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./playstation.html">PlayStation</a>
-                    <a class="dropdown-item" href="./xbox.html">Xbox</a>
-                    <a class="dropdown-item" href="./nintendo.html">Nintendo</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Ofertas</a>
-                  </div>
-                </li>
-                <!--Segundo Dropdown-->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    PC
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./index-componentes.html">Componentes</a>
-                    <a class="dropdown-item" href="./index-armados.html">PC armados</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Ofertas</a>
-                  </div>
-                </li>
-                <!--Dropdown Login-->
-                <div class="dropdown ml-1 mt-1" id="dropdownlogin">
-                  <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenu2"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Iniciar sesión
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <form class="px-4 py-3">
-                      <div class="form-group">
-                        <label for="exampleDropdownFormEmail1">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                          placeholder="email@ejemplo.com">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleDropdownFormPassword1">Contraseña:</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                          placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                          <label class="form-check-label" for="dropdownCheck">
-                            Recordarme
-                          </label>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Ingresar</button>
-                    </form>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./index-registro.html">¿No tienes una cuenta?</a>
-                    <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
-                  </div>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
             </ul>
-            <div>
-              <form class="d-flex">
-                <button class="btn btn-outline-success mr-2" type="submit">Buscar</button>
-                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-              </form>
-            </div>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
         </nav>
       </header>
-      <!--Sección carousel ofertas-->
-      <section class="carousel-ofertas">
+      <!--Seccion ofertas-->
+      <section class="ofertas">
+        <span class="span-ofertas">Ofertas Imperdibles!!!</span>
         <div
-          id="carouselExampleCaptions"
+          id="carouselExampleIndicators"
           class="carousel slide"
           data-ride="carousel"
         >
           <ol class="carousel-indicators">
             <li
-              data-target="#carouselExampleCaptions"
+              data-target="#carouselExampleIndicators"
               data-slide-to="0"
               class="active"
             ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/promocion.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./assets/img/promocion.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="img/promo2.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="./assets/img/promo2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="img/pc-gamer.png" class="d-block w-100" alt="..." />
+              <img
+                src="./assets/img/pc-gamer.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleCaptions"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="prev"
           >
@@ -141,7 +145,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleCaptions"
+            href="#carouselExampleIndicators"
             role="button"
             data-slide="next"
           >
@@ -151,226 +155,210 @@
         </div>
       </section>
       <!--Sección carousel más vendidos-->
-      <section class="carousel-mas-vendidos">
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide carousel-multi-item mt-2"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-inner" role="listbox">
-              <!-- Primer slide-->
-              <div class="carousel-item active">
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://www.microplay.cl/files/uploads/Funko-POP-The-Simpson-Gamer-Bart-Simpson-portada.jpg"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Kunko pop</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://www.microplay.cl/files/uploads/Teclado-Mecanico-Small-FD-KD900-Fiddler--portada.jpg"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Teclado mecanico</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://www.microplay.cl/files/uploads/Mouse-Pulsefire-Haste-RGB-HyperX-portada.jpg"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Mouse RGB</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://www.microplay.cl/files/uploads/Monster-Hunter-Rise-Switch-portada.jpg"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Monster junter</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
+      <section class="slider">
+        <ul id="autoWidth" class="cs-hidden">
+          <!--1------------------------------------>
+          <li class="item-a">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="1" src="./assets/img/c1.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
                 </div>
               </div>
-              <!--Segundo slide-->
-              <div class="carousel-item">
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://cdn.retailrocket.net/api/1.0/partner/5b6b4a3697a52894a8f50b8e/item/1000043245/picture/?format=png&width=190&height=190&scale=both"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Village</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Fnko pop</a>
+                  <span>Recien llegado</span>
                 </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://cdn.retailrocket.net/api/1.0/partner/5b6b4a3697a52894a8f50b8e/item/1000022806/picture/?format=png&width=190&height=190&scale=both"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Control PZ4</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://cdn.retailrocket.net/api/1.0/partner/5b6b4a3697a52894a8f50b8e/item/1000038281/picture/?format=png&width=190&height=190&scale=both"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Teclado MV2</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3" style="float: left">
-                  <div class="card mb-2">
-                    <img
-                      class="card-img-top"
-                      src="https://cdn.retailrocket.net/api/1.0/partner/5b6b4a3697a52894a8f50b8e/item/1000041839/picture/?format=png&width=190&height=190&scale=both"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Audifonos Rose</h4>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <a class="btn btn-primary">Comprar</a>
-                    </div>
-                  </div>
-                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$9.990</a>
               </div>
             </div>
-          </div>
-          <!--/.Second slide-->
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleInterval"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleInterval"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+          </li>
+          <!--2------------------------------------>
+          <li class="item-b">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="2" src="./assets/img/c2.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">MH Nintendo Switch</a>
+                  <span>Oferta!!</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$20.000</a>
+              </div>
+            </div>
+          </li>
+          <!--3------------------------------------>
+          <li class="item-c">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="3" src="./assets/img/c3.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Mouse Gamer</a>
+                  <span>Recomendado para ti</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$26.000</a>
+              </div>
+            </div>
+          </li>
+          <!--4------------------------------------>
+          <li class="item-d">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="4" src="./assets/img/c4.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Teclado Mecanico Gamer</a>
+                  <span>Recien Llegado</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$27.000</a>
+              </div>
+            </div>
+          </li>
+          <!--5------------------------------------>
+          <li class="item-e">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="5" src="./assets/img/c5.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Resident evil 8 PS4</a>
+                  <span>Ultimas Unidades!!!</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$48.000</a>
+              </div>
+            </div>
+          </li>
+          <!--6------------------------------------>
+          <li class="item-f">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="6" src="./assets/img/c6.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Control PS4</a>
+                  <span>Nuevas Unidades</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$30.000</a>
+              </div>
+            </div>
+          </li>
+          <!--7------------------------------------>
+          <li class="item-g">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="7" src="./assets/img/c7.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Teclado Membrana</a>
+                  <span>Recien llegado</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$45.000</a>
+              </div>
+            </div>
+          </li>
+          <!--8------------------------------------>
+          <li class="item-h">
+            <!--box-slider--------------->
+            <div class="box">
+              <!--img-box---------->
+              <div class="slide-img">
+                <img alt="8" src="./assets/img/c8.jpg" />
+                <!--overlayer---------->
+                <div class="overlay">
+                  <!--buy-btn------>
+                  <a href="#" class="buy-btn">Comprar</a>
+                </div>
+              </div>
+              <!--detail-box--------->
+              <div class="detail-box">
+                <!--type-------->
+                <div class="type">
+                  <a href="#">Audifonos gamer Rosa</a>
+                  <span>Ultimas Unidades!!!</span>
+                </div>
+                <!--precio-------->
+                <a href="#" class="precio">$35.000</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
-      <!--Footer-->
-      <footer>
-        <nav class="navbar navbar-expand navbar-dark bg-dark mt-2">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExample08"
-            aria-controls="navbarsExample08"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-md-center"
-            id="navbarsExample08"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link"
-                  >&copy;AgoraTech <span class="sr-only"></span
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  target="_blank"
-                  href="https://www.razer.com/cart"
-                  >Carrito</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </footer>
     </main>
 
     <!-- DESDE AQUI HACIA ARRIBA -->
@@ -384,5 +372,10 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./assets/JS/Jquery.js"></script>
+    <!--lightslider.js--------------->
+    <script type="text/javascript" src="./assets/JS/lightslider.js"></script>
+    <!--script-link----------->
+    <script type="text/javascript" src="./assets/JS/index.js"></script>
   </body>
 </html>
