@@ -20,6 +20,7 @@ body {
   width: 50%;
   background-size: cover;
   background-position: 25%;
+  position: relative;
 }
 
 #registration-form .frm {
@@ -30,6 +31,7 @@ body {
   padding: 0 35px;
   background-size: 100% 100%;
   background-color: white;
+  position: relative;
 }
 
 #registration-form h1 {
@@ -55,6 +57,10 @@ body {
 
   #registration-form .form-control {
     width: 100%;
+  }
+
+  #registration-form .table {
+    display: none;
   }
 }
 
