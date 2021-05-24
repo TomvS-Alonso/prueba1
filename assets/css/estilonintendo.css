@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondonintendo.jpg);
+    background-image: url(../img/fondonintendo.png);
     background-size: 100% 100%;
     background-attachment: fixed;
  }
@@ -40,3 +40,6 @@ body{
     left: 0;
  }
  
+.card {
+    color: black;
+}

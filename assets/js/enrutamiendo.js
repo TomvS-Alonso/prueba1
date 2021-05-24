@@ -27,7 +27,7 @@
         },
         '/Contacto': {
             archivo: 'contactos.html'
-        }
+        }        
     };
     const contenedor = d.getElementById("contenido-web")
     
