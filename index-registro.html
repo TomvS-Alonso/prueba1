@@ -30,7 +30,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="username"
+                id="nombre"
                 placeholder="Ingresa tu nombre de usuario"
                 required
               />
@@ -50,30 +50,38 @@
               <input
                 type="password"
                 class="form-control"
-                id="pwd"
+                id="contraseña"
                 placeholder="Ingresa tu contraseña"
                 required
               />
             </div>
             <div class="form-group">
-              <input type="submit" class="btn btn-success btn-lg" value="Confirmar">
-              </input>
+              <input
+                type="submit"
+                class="btn btn-success btn-lg"
+                value="Confirmar"
+                id="btn-submit"
+              />
               <a href="./index.html" class="btn btn-default">Volver</a>
+              <br /><br />
+              <button type="button" class="btn btn-success" id="guardar">
+                Guardar
+              </button>
             </div>
           </form>
         </div>
         <table class="table table-dark table-hover table-bordered" id="tbl">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Email</th>
-                <th>Eliminar</th>
-                <th>Modificar</th>
-              </tr>
-            </thead>
-            <tbody id="contenido"></tbody>
-          </table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Contraseña</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="contenido"></tbody>
+        </table>
       </div>
     </main>
     <!-- DESDE AQUI HACIA ARRIBA -->
@@ -87,6 +95,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/JS/registro-personas.js"></script>
+    <script src="./assets/JS/registro-personas2.js"></script>
   </body>
 </html>
