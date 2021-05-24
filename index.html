@@ -40,9 +40,9 @@
                           Consolas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="./playstation.html">PlayStation</a>
-                          <a class="dropdown-item" href="./xbox.html">Xbox</a>
-                          <a class="dropdown-item" href="./nintendo.html">Nintendo</a>
+                          <a class="dropdown-item" href="#/PlayStation">PlayStation</a>
+                          <a class="dropdown-item" href="#/Xbox">Xbox</a>
+                          <a class="dropdown-item" href="#/Nintendo">Nintendo</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Ofertas</a>
                         </div>
@@ -54,10 +54,21 @@
                           PC
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="componentes.html">Componentes</a>
-                          <a class="dropdown-item" href="pc.html">PC armados</a>
+                          <a class="dropdown-item" href="#/Componentes">Componentes</a>
+                          <a class="dropdown-item" href="#/Pc">PC armados</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Ofertas</a>
+                        </div>
+                      </li>
+                      <!-- Tercer Dropdown -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Mantencion
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./paginas/formProductos.html">Productos</a>
+                          <a class="dropdown-item" href="#/Clientes">Clientes</a>
                         </div>
                       </li>
                       <!--Dropdown Login-->
@@ -89,19 +100,23 @@
                             <button type="submit" class="btn btn-primary">Ingresar</button>
                           </form>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="index-registro.html">¿No tienes una cuenta?</a>
+                          <a class="dropdown-item" href="#/Registro">¿No tienes una cuenta?</a>
                           <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
                         </div>
                       </div>
-                  </div>
+
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#/Contacto">Contactanos!! <span class="sr-only">(current)</span></a>
+                      </li>
+
                   </ul>
                   <form class="d-flex">
                     <button class="btn btn-outline-success mr-2" type="submit">Buscar</button>
                     <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
                   </form>
-                  </div>
               </nav>
             </header>
+              <section id="contenido-web" class="container-fluid">
               <!---Seccion carrusel ofertas-->
               <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -175,7 +190,7 @@
                     <div class="box">
                       <!--img-box---------->
                       <div class="slide-img">
-                        <img alt="2" src="./assets/img/c1.jpg" />
+                        <img alt="2" src="./assets/img/c2.jpg" />
                         <!--overlayer---------->
                         <div class="overlay">
                           <!--buy-btn------>
@@ -200,7 +215,7 @@
                     <div class="box">
                       <!--img-box---------->
                       <div class="slide-img">
-                        <img alt="3" src="./assets/img/c2.jpg" />
+                        <img alt="3" src="./assets/img/c3.jpg" />
                         <!--overlayer---------->
                         <div class="overlay">
                           <!--buy-btn------>
@@ -346,6 +361,12 @@
                   </li>
                 </ul>
               </section>
+              <!--Api-->
+              <article class="direccion">
+                <h4>¿Donde encontrarnos?</h4>
+              </article>
+              <br>
+              <div id="map"></div>
               <!--Footer-->
               <footer>
                 <nav class="navbar navbar-expand navbar-dark bg-dark mt-2">
@@ -383,6 +404,10 @@
         <script type="text/javascript" src="./assets/JS/lightslider.js"></script>
         <!--script-link----------->
         <script type="text/javascript" src="./assets/JS/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSmCBvI3Q8QXFc0krBN496lPgb3ahvQF4&callback=initMap&libraries=&v=weekly" async ></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="./assets/JS/api.js"></script>
+        <script src="./assets/JS/enrutamiento.js"></script>
     </body>
 
 </html>

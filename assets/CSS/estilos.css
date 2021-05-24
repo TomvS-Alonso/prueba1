@@ -26,3 +26,19 @@ body {
   font-weight: 600;
   font-family: poppins;
 }
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.direccion {
+  border: 2px solid white;
+  background-color: rgb(44, 41, 41);
+  display: table;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.direccion h4 {
+  color: white;
+}
