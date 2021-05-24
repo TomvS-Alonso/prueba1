@@ -1,0 +1,13 @@
+body {
+  background-image: url(../img/contactos.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.identidad {
+  display: flex;
+}
+
+.card-body {
+  background-color: white;
+  border-radius: 8px;
+}
