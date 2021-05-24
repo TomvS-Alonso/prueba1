@@ -30,13 +30,20 @@
         const nombre = formulario.nombreProducto.value;
         const descripcion = formulario.descripcion.value;
         const precio = formulario.precio.value;
+        const fechaIngreso = formulario.ingreso.value;
+        const tipoProd = formulario.tipoProd.value;
+        const estado = formulario.estado.value;
+        const stock = formulario.stock.value;
 
         const objetoProductoTemporal = {
             id: id,
             nombre: nombre,
             descripcion: descripcion,
-            precio: precio
-
+            precio: precio,
+            fecha: fechaIngreso,
+            tipo: tipoProd,
+            estado: estado,
+            stock: stock
         };
 
         // añade elemento al LocalStorage
@@ -84,16 +91,32 @@
         tdPrecio.innerText = hijoAnadir.precio;
 
         // creamos la columna imagen
-        const tdImagen = document.createElement("td");
+        //const tdImagen = document.createElement("td");
         // asignamos el texto a la columna imagen
-        tdImagen.innerText = hijoAnadir.imagen;
+        //tdImagen.innerText = hijoAnadir.imagen;
+
+        // crear columna fechaIngreso
+        const tdIngreso = document.createElement("td");
+        tdIngreso.innerText = hijoAnadir.fecha;
+        
+        // crear columna tipo de producto
+        const tdTipo = document.createElement("td");
+        tdTipo.innerText = hijoAnadir.tipo;
+
+        // crear columna estado del producto
+        const tdEstado = document.createElement("td");
+        tdEstado.innerText = hijoAnadir.estado;
+
+        // crear columna stock del producto
+        const tdStock = document.createElement("td");
+        tdStock.innerText = hijoAnadir.stock;
 
         // Creando botones de accion 
         const tdAccion = document.createElement("td");
 
         const btnBorrar = document.createElement("button");
         const btnEditar = document.createElement("button");
-        const btnImagen = document.createElement("button");
+        // const btnImagen = document.createElement("button");
 
         btnBorrar.classList.add('btn', 'btn-danger');
         btnBorrar.addEventListener("click", function () {
@@ -105,35 +128,41 @@
             document.getElementById('nombreProducto').value = hijoAnadir.nombre;
             document.getElementById('descripcion').value = hijoAnadir.descripcion;
             document.getElementById('precio').value = hijoAnadir.precio;
+            document.getElementById('ingreso').value = hijoAnadir.fecha;
+            document.getElementById('tipo-prod').value = hijoAnadir.tipo;
+            document.getElementById('estado').value = hijoAnadir.estado;
+            document.getElementById('stock').value = hijoAnadir.stock;
 
             btnGuardar.addEventListener("click", function () {
                 editarElemento(hijoAnadir.id);
             })
-
-
         });
 
-        btnImagen.classList.add('btn', 'btn-warning', 'popup-btn');
-        btnImagen.addEventListener("click", function () {
-            abrirImagen();
-        })
+        //btnImagen.classList.add('btn', 'btn-warning', 'popup-btn');
+        //btnImagen.addEventListener("click", function () {
+        //    abrirImagen();
+        //})
 
         btnEditar.classList.add('btn', 'btn-info');
 
         btnBorrar.innerText = "☠️";
         btnEditar.innerText = "✍";
-        btnImagen.innerText = "📷";
+        // btnImagen.innerText = "📷";
 
         // asignar botones de accion al tdAccion
         tdAccion.appendChild(btnBorrar);
         tdAccion.appendChild(btnEditar);
-        tdAccion.appendChild(btnImagen);
+        // tdAccion.appendChild(btnImagen);
 
         // asignar los hijo a la filas
         trTemporal.appendChild(tdId);
         trTemporal.appendChild(tdNombre);
         trTemporal.appendChild(tdDescripcion);
         trTemporal.appendChild(tdPrecio);
+        trTemporal.appendChild(tdIngreso);
+        trTemporal.appendChild(tdTipo);
+        trTemporal.appendChild(tdEstado);
+        trTemporal.appendChild(tdStock);
         // trTemporal.appendChild(tdImagen);    
         trTemporal.appendChild(tdAccion);
 
@@ -210,6 +239,10 @@
                 datosProductos[i].nombre = document.getElementById('nombreProducto').value;
                 datosProductos[i].descripcion = document.getElementById('descripcion').value;
                 datosProductos[i].precio = document.getElementById('precio').value;
+                datosProductos[i].fecha = document.getElementById('ingreso').value;
+                datosProductos[i].tipo = document.getElementById('tipo-prod').value;
+                datosProductos[i].estado = document.getElementById('estado').value;
+                datosProductos[i].stock = document.getElementById('stock').value;
 
                 localStorage.setItem('productos', JSON.stringify(datosProductos));
 
@@ -218,7 +251,8 @@
 
     }
 
-    // CODIGO PARA LA IMAGEN
+    // CODIGO PARA LA IMAGEN PRUEBA
+    /*
     function abrirImagen() {
         for (const i in datosProductos) {
             if (datosProductos[i].id == id) {
@@ -247,8 +281,5 @@
         }
         
     }
-
-    
-
-
+    */
 })();

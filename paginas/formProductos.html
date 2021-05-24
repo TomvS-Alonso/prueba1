@@ -43,8 +43,32 @@
 
                     <article class="col-12">
                         <div class="form-group">
-                            <label for="text">Ingrese url imagen</label>
-                            <input type="text" id="imagen" class="form-control" name="imagen" />
+                            <label for="descripcion">Ingrese fecha de ingreso</label>
+                            <input type="date" id="ingreso" class="form-control" name="ingreso" required
+                                minlength="1" />
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="form-group">
+                            <label for="precio">Ingrese tipo de producto</label>
+                            <input type="text" id="tipo-prod" class="form-control" name="tipoProd" required/>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="form-group">
+                            <label for="descripcion">Ingrese Estado de producto</label>
+                            <input type="text" id="estado" class="form-control" name="estado" required
+                                minlength="1" />
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="form-group">
+                            <label for="precio">Ingrese stock del producto</label>
+                            <input type="number" id="stock" class="form-control" name="stock" required min="0"
+                             />
                         </div>
                     </article>
                 </section>
@@ -67,6 +91,10 @@
                         <th>Nombre</th>
                         <th>Descripcion</th>
                         <th>Precio</th>
+                        <th>Fecha Ingreso</th>
+                        <th>Tipo Producto</th>
+                        <th>Estado Producto</th>
+                        <th>Stock</th>
                         <th>Accion</th>
                     </tr>
                 </thead>
@@ -75,15 +103,15 @@
                 </tbody>
             </table>
         </section>
-        <!-- popup imagen -->
+        <!-- popup imagen
         <div class="popup-view">
             <div class="popup-card">
                 <a><i class="fas fa-times close-btn">X</i></a>
                 <div class="producto-imagen">
-                    <img src="/assets/img/xboxone.jfif" alt="">
+                    <img src="/assets/img/450_1000.jpeg" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </main>
     <script src="/assets/js/registroProd.js"></script>

@@ -1,5 +1,5 @@
 html{
-    background: url(../img/background.gif) no-repeat;
+    /*background: url(../img/background.gif) no-repeat;*/
 	background-size: cover;
     min-height: 100%;
 }
@@ -76,3 +76,18 @@ body{
 		margin-top: 20px;
 	}
 }
+
+/* Ocultar api cuando entre a otra seccion */
+.api {
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ }
+
+ footer {
+	visibility: hidden;	
+ }
