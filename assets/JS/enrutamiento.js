@@ -27,7 +27,7 @@
       archivo: 'formProductos.html',
     },
     '/Contacto': {
-      archivo: 'contactos.html',
+      archivo: 'index-contactos.html',
     },
   };
   const contenedor = d.getElementById('contenido-web');

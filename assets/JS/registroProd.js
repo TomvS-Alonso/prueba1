@@ -86,11 +86,6 @@
     // asignamos el texto a la columna correo
     tdPrecio.innerText = hijoAnadir.precio;
 
-    // creamos la columna imagen
-    //const tdImagen = document.createElement("td");
-    // asignamos el texto a la columna imagen
-    //tdImagen.innerText = hijoAnadir.imagen;
-
     // crear columna fechaIngreso
     const tdIngreso = document.createElement('td');
     tdIngreso.innerText = hijoAnadir.fecha;
@@ -133,21 +128,14 @@
       });
     });
 
-    //btnImagen.classList.add('btn', 'btn-warning', 'popup-btn');
-    //btnImagen.addEventListener("click", function () {
-    //    abrirImagen();
-    //})
-
     btnEditar.classList.add('btn', 'btn-info');
 
     btnBorrar.innerText = '☠️';
     btnEditar.innerText = '✍';
-    // btnImagen.innerText = "📷";
 
     // asignar botones de accion al tdAccion
     tdAccion.appendChild(btnBorrar);
     tdAccion.appendChild(btnEditar);
-    // tdAccion.appendChild(btnImagen);
 
     // asignar los hijo a la filas
     trTemporal.appendChild(tdId);
@@ -171,8 +159,6 @@
         anadirElementosTabla(datosProductos[i]);
         console.log(datosProductos);
         id = datosProductos[i].id + 1;
-        // datosProductos[i].id = idTabla;
-        // document.getElementById('id').value = idTabla;
       }
     }
   }
@@ -196,28 +182,6 @@
     }
   }
 
-  /* function borrarElemento(idUsuario){
-     const respuesta = w.confirm("Seguro que quieres borrar al usuario"+idUsuario+"?");
-     if(respuesta){
-         d.querySelector('tr[id-usuario="'+idUsuario+'"]').remove();
-         w.alert("Borrado correctamente");
-     }
- } */
-
-  /*function eliminarElemento(id){
-      for (const i in datosUsuario) {
-          if(datosUsuario[i].id == id) {
-              // let datosEnLocalStorage = localStorage.getItem('personas');
-
-              datosUsuario.splice(datosUsuario[i], 1);
-              // tbody.removeChild(datosUsuario[i]);
-          }
-      }
-      
-      
-  
-  }*/
-
   function editarElemento(id) {
     for (const i in datosProductos) {
       if (datosProductos[i].id == id) {
@@ -236,36 +200,4 @@
       }
     }
   }
-
-  // CODIGO PARA LA IMAGEN PRUEBA
-  /*
-  function abrirImagen() {
-      for (const i in datosProductos) {
-          if (datosProductos[i].id == id) {
-              const popupViews = document.querySelectorAll('.popup-view');
-              const popupBtns = document.querySelectorAll('.popup-btn');
-              const closeBtns = document.querySelectorAll('.close-btn');
-
-              const popup = function (popupClick) {
-                  popupViews[popupClick].classList.add('active');
-              }
-
-              popupBtns.forEach((popupBtn, i) => {
-                  popupBtn.addEventListener("click", () => {
-                      popup(i);
-                  });
-              });
-
-              closeBtns.forEach((closeBtn) => {
-                  closeBtn.addEventListener("click", () => {
-                      popupViews.forEach((popupView) => {
-                          popupView.classList.remove('active');
-                      });
-                  });
-              });
-          }
-      }
-      
-  }
-  */
 })();
