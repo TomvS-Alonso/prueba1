@@ -24,6 +24,9 @@
         },
         '/Productos': {
             archivo: 'formProductos.html'
+        },
+        '/Contacto': {
+            archivo: 'contactos.html'
         }
     };
     const contenedor = d.getElementById("contenido-web")
@@ -59,7 +62,7 @@
             return  respuesta.text();
         })
         .then( function(respuestaTexto){
-             console.log(respuestaTexto);
+             // console.log(respuestaTexto);
              contenedor.innerHTML = "";
              contenedor.innerHTML = respuestaTexto;
         });

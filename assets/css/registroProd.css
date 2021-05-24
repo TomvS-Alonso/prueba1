@@ -1,3 +1,17 @@
+/* Estilos principal del crud de productos */
+body {
+    background-image: url(../img/521477.jpg);
+}
+
+.container {
+    color: white;
+}
+
+.row {
+    background: darkcyan;
+}
+
+
 /* estilos para el pop up view */
 
 .container .popup-view {

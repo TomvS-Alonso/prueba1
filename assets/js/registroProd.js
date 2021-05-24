@@ -1,13 +1,13 @@
 (function () {
 
-    var id = 1;
+    var id = 0;
     const btnGuardar = document.getElementById("guardar");
 
     document.addEventListener('readystatechange', function () {
         if (document.readyState === 'interactive') {
             // con esta funcion, funciona todo lo demas
             pintarTablaInicio();
-
+            console.log(id);
         }
     });
 
@@ -140,12 +140,21 @@
 
         // añadimos la fila creada a la tabla en el doom
         tbody.appendChild(trTemporal);
+
+
     };
 
     function pintarTablaInicio() {
-        for (let i = 0; i < datosProductos.length; i++) {
-            anadirElementosTabla(datosProductos[i]);
+        if (datosProductos.length != 0) {
+            for (let i = 0; i < datosProductos.length; i++) {
+                anadirElementosTabla(datosProductos[i]);
+                console.log(datosProductos);
+                id = datosProductos[i].id + 1;
+                // datosProductos[i].id = idTabla;
+                // document.getElementById('id').value = idTabla;
+            }
         }
+
     }
 
 
@@ -202,7 +211,7 @@
                 datosProductos[i].descripcion = document.getElementById('descripcion').value;
                 datosProductos[i].precio = document.getElementById('precio').value;
 
-                localStorage.setItem('personas', JSON.stringify(datosProductos));
+                localStorage.setItem('productos', JSON.stringify(datosProductos));
 
             }
         }
@@ -211,32 +220,35 @@
 
     // CODIGO PARA LA IMAGEN
     function abrirImagen() {
-        const popupViews = document.querySelectorAll('.popup-view');
-        const popupBtns = document.querySelectorAll('.popup-btn');
-        const closeBtns = document.querySelectorAll('.close-btn');
+        for (const i in datosProductos) {
+            if (datosProductos[i].id == id) {
+                const popupViews = document.querySelectorAll('.popup-view');
+                const popupBtns = document.querySelectorAll('.popup-btn');
+                const closeBtns = document.querySelectorAll('.close-btn');
 
-        const popup = function (popupClick) {
-            popupViews[popupClick].classList.add('active');
-        }
+                const popup = function (popupClick) {
+                    popupViews[popupClick].classList.add('active');
+                }
 
-        popupBtns.forEach((popupBtn, i) => {
-            popupBtn.addEventListener("click", () => {
-                popup(i);
-            });
-        });
-
-        closeBtns.forEach((closeBtn) => {
-            closeBtn.addEventListener("click", () => {
-                popupViews.forEach((popupView) => {
-                    popupView.classList.remove('active');
+                popupBtns.forEach((popupBtn, i) => {
+                    popupBtn.addEventListener("click", () => {
+                        popup(i);
+                    });
                 });
-            });
-        });
 
-
-
+                closeBtns.forEach((closeBtn) => {
+                    closeBtn.addEventListener("click", () => {
+                        popupViews.forEach((popupView) => {
+                            popupView.classList.remove('active');
+                        });
+                    });
+                });
+            }
+        }
+        
     }
 
+    
 
 
 })();
