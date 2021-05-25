@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(../img/componentes-fondo.gif);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagenlogo img {
+  width: 100%;
+}
+.imagenlogo {
+  padding: 1%;
+}
+
+/*Cards*/
+.container-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  flex-flow: wrap;
+  overflow: hidden;
+}
+
+.container-cards.active {
+  overflow: visible;
+}
+
+/*Estilo span ver más*/
+
+.ver-ms {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 25px;
+  z-index: 1;
+}
+
+.ver-mas {
+  font-family: poppins;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #1d212b;
+}
+
+/*Estilos para las cards de productos*/
+.producto .producto-card {
+  z-index: 1;
+  background: #1d212b;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.producto .producto-card:before {
+  content: '';
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.producto .producto-card .producto-img {
+  z-index: 1;
+  position: absolute;
+  max-width: 350px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.producto .producto-card .nombre {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 130px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.producto .producto-card .precio {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 80px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.producto .producto-card .popup-btn {
+  z-index: 2;
+  color: #fff;
+  background: #555;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*Styles para el popup*/
+.producto .popup-view {
+  z-index: 2;
+  background: rgba(31, 30, 30, 0.562);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.producto .popup-view.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.producto .popup-card {
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+.producto .popup-card .producto-img {
+  z-index: 2;
+  background: #1d212b;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 90%;
+  transform: translateY(25px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.producto .popup-card .producto-img img {
+  z-index: 2;
+  position: relative;
+  width: 450px;
+  left: -10%; /*-50%*/
+}
+
+.producto .popup-card .info {
+  z-index: 2;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.producto .popup-card .close-btn {
+  color: #555;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.producto .popup-card .info h2 {
+  font-size: 40px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.producto .popup-card .info h2 span {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.producto .popup-card .info p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.producto .popup-card .info .precio {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.producto .popup-card .info .anadir-carro-btn {
+  color: #fff;
+  background: #009dd2;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.producto .popup-card .info .anadir-deseo {
+  color: #009dd2;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*Estilos responsive*/
+@media (max-width: 800px) {
+  .producto .popup-card {
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+  }
+  .ver-ms {
+    flex-direction: column;
+  }
+  .producto .popup-card .producto-img {
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    transform: translateY(0);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .producto .popup-card .producto-img img {
+    left: initial;
+    max-width: 80%;
+  }
+
+  .producto .popup-card .info {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .producto .popup-card .info h2 {
+    margin: 20px 5px 5px 5px;
+    font-size: 25px;
+  }
+
+  .producto .popup-card .info h2 span {
+    font-size: 10px;
+  }
+
+  .producto .popup-card .info p {
+    margin: 5px;
+    font-size: 13px;
+  }
+
+  .producto .popup-card .info .precio {
+    margin: 5px;
+    font-size: 30px;
+  }
+
+  .producto .popup-card .info .anadir-carro-btn {
+    margin: 5px auto;
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+
+  .producto .popup-card .info .anadir-deseo {
+    font-size: 14px;
+  }
+
+  .producto .popup-card .close-btn {
+    z-index: 4;
+  }
+}
+ 
+ .api {
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ }
