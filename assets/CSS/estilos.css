@@ -1,0 +1,35 @@
+body{
+   background-image: url(../img/521477.jpg);
+   background-size: 100% 100%;
+   background-attachment: fixed;
+}
+#icono-nav:hover{
+   animation: icon linear 0.5s;
+}
+
+@keyframes icon{
+   from{
+      transform: rotate(360deg);
+  }
+  to{
+      transform: rotate(0deg);
+  }
+}
+
+/* USANDO API */
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+.direccion {
+   border: 2px solid white;
+   background-color: rgb(44, 41, 41);
+   display: table;
+   border-radius: 10px 10px 10px 10px;
+}
+
+.direccion h4 {
+   color: white;
+}
+
