@@ -1,0 +1,46 @@
+body{
+    background-image: url(../img/fondops4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+ }
+.imagenlogo img{
+    width: 100%;
+}
+.imagenlogo{
+    padding: 1%;
+}
+.productos-play {
+    background-color: rgb(56, 56, 61);
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.card img{
+    height: 49%;
+}
+#icono-nav:hover{
+    animation: icon linear 0.5s;
+ }
+ 
+ @keyframes icon{
+    from{
+       transform: rotate(360deg);
+   }
+   to{
+       transform: rotate(0deg);
+   }
+ }
+.api {
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.card {
+    color: black;
+}
