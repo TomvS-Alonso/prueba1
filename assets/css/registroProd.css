@@ -1,0 +1,109 @@
+/* Estilos principal del crud de productos */
+body {
+    background-image: url(../img/521477.jpg);
+}
+
+.container {
+    color: white;
+}
+
+.row {
+    background: darkcyan;
+}
+
+
+/* estilos para el pop up view */
+
+.container .popup-view {
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .popup-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.container .popup-card .producto-imagen {
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .popup-card .producto-imagen img {
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    left: 0px;
+}
+
+.container .popup-card .close-btn {
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+} 
+
+/* responsive style */
+
+@media (max-width: 900px){
+    .container .popup-card{
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+    
+    .container .popup-card .producto-imagen {
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translate(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius:  10px;
+    }
+
+    .container .popup-card .producto-imagen img {
+        left: initial;
+        max-width: 100%;
+    }
+
+    .container .popup-card .close-btn {
+        z-index: 4;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+        .table {
+            display: none;
+        }
+}
+
+
+
