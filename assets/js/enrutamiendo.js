@@ -35,7 +35,6 @@
         if(d.readyState === 'interactive') {
             // aqui va el codigo de arranque de mi app.
             iniciarTodo();
-
         }
     });
         
@@ -71,6 +70,7 @@
 
     // la ruta del navegador, parametros, funciones despues de..., etc
     // la ruta del navegador, archivo que deba cargar (html)
+
 
 
 })(document, window)
